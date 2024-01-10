@@ -3,6 +3,17 @@ return {
     "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
+    config = function()
+      require("catppuccin").setup {
+        highlight_overrides = {
+          mocha = function(mocha)
+            return {
+              LineNr = { fg = mocha.overlay1 },
+            }
+          end,
+        },
+      }
+    end,
     opts = {
       flavour = "mocha",
       integrations = {
