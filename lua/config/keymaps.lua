@@ -3,6 +3,8 @@
 -- -- Add any additional keymaps here
 -- -- This file is automatically loaded by lazyvim.config.init
 --
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Go down half page and center"})
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Go up half page and center"})
 
 -- vim.keymap.set("n", "<leader><space>", "<cmd>Telescope find_files<cr>", { desc = "siema" })
 
