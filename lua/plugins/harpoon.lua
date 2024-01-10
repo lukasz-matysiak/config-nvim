@@ -34,8 +34,8 @@ return {
       end
 
       map("<leader>ha", function() harpoon:list():append() end, { desc = "[H]arpoon [a]dd" })
-      -- map("<leader>hs", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc = "[H]arpoon [s]how" })
-      map("<leader>hs", function() toggle_telescope(harpoon:list()) end, { desc = "[H]arpoon [s]how"})
+      map("<leader>hs", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, { desc = "[H]arpoon [s]how" })
+      map("<leader>ht", function() toggle_telescope(harpoon:list()) end, { desc = "[H]arpoon [t]elescope"})
       map("<leader>hr", function() harpoon:list():remove() end, { desc = "[H]arpoon [r]emove"})
       map("<leader>h1", function() harpoon:list():select(1) end, { desc = "[H]arpoon [1]" })
       map("<leader>h2", function() harpoon:list():select(2) end, { desc = "[H]arpoon [2]" })
