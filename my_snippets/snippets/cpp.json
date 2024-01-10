@@ -1,0 +1,8 @@
+{
+  "qdebug matys": {
+    "prefix": "qmatys",
+    "body": [
+      "#define MATYS_LOG(X) qDebug() << \"MATYS_LOG:\" << __PRETTY_FUNCTION__ << X;"
+    ]
+  }
+}
