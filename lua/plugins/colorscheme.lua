@@ -4,7 +4,7 @@ return {
     lazy = true,
     name = "catppuccin",
     config = function()
-      require("catppuccin").setup {
+      require("catppuccin").setup({
         highlight_overrides = {
           mocha = function(mocha)
             return {
@@ -12,7 +12,7 @@ return {
             }
           end,
         },
-      }
+      })
     end,
     opts = {
       flavour = "mocha",
@@ -23,6 +23,7 @@ return {
         dashboard = true,
         flash = true,
         gitsigns = true,
+        harpoon = true,
         headlines = true,
         illuminate = true,
         indent_blankline = { enabled = true },
@@ -56,7 +57,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin"
-    }
-  }
+      colorscheme = "catppuccin",
+    },
+  },
 }
