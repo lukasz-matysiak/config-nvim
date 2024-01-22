@@ -5,6 +5,13 @@
 --
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Go down half page and center"})
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Go up half page and center"})
+local keys = {
+  "<cr>",
+  "<Bs>"
+}
+for _, key in ipairs(keys) do
+  vim.keymap.set("i", key, "<C-g>u" .. key, { noremap = true })
+end
 
 -- vim.keymap.set("n", "<leader><space>", "<cmd>Telescope find_files<cr>", { desc = "siema" })
 
