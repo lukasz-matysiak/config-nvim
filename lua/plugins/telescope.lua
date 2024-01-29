@@ -7,8 +7,18 @@ return {
     opts = {
         pickers = {
             find_files = {
-                follow = true,
-                hidden = true
+                find_command = {
+                    'fd',
+                    '--type',
+                    'f',
+                    '--color=never',
+                    '--hidden',
+                    '--follow',
+                    '-E',
+                    '.git/*'
+                }
+                -- follow = true,
+                -- hidden = true
             }
         }
     }
