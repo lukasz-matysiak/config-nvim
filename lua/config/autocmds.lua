@@ -3,6 +3,10 @@
 -- Add any additional autocmds here
 -- This file is automatically loaded by lazyvim.config.init.
 
+vim.api.nvim_create_user_command('Wq', 'wq', {})
+vim.api.nvim_create_user_command('W', 'w', {})
+vim.api.nvim_create_user_command('Q', 'q', {})
+
 -- local function augroup(name)
 --   return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
 -- end
