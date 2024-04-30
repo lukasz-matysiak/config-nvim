@@ -14,6 +14,18 @@ return {
       {"<leader>sg", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", desc = "Grep files with args"}
     },
     opts = {
+        defaults = {
+            mappings = {
+                i = {
+                    ["<S-Down>"] = function(...)
+                        require("telescope.actions").cycle_history_next(...)
+                    end,
+                    ["<S-Up>"] = function(...)
+                        require("telescope.actions").cycle_history_prev(...)
+                    end,
+                },
+            }
+        },
         pickers = {
             find_files = {
                 find_command = {
