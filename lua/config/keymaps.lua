@@ -13,6 +13,11 @@ for _, key in ipairs(keys) do
   vim.keymap.set("i", key, "<C-g>u" .. key, { noremap = true })
 end
 
+vim.keymap.set("n", "<S-Up>", "<Nop>")
+vim.keymap.set("n", "<S-Down>", "<Nop>")
+vim.keymap.set("v", "<S-Up>", "<Nop>")
+vim.keymap.set("v", "<S-Down>", "<Nop>")
+
 -- vim.keymap.set("n", "<leader><space>", "<cmd>Telescope find_files<cr>", { desc = "siema" })
 
 -- local Util = require("lazyvim.util")
